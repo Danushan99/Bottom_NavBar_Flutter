@@ -5,7 +5,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -38,7 +37,7 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.lightGreen[200],
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
@@ -60,7 +59,7 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
                         backgroundColor: Colors.white,
                         child: Icon(
                           Icons.favorite,
-                          color: Colors.pink,
+                          color: Colors.pink[400],
                         ),
                         elevation: 0.1,
                         onPressed: () {}),
